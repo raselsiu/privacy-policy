@@ -1,211 +1,281 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Privacy Policy for বর্ণমালা ও সংখ্যা পরিচয়">
-
-    <title>Privacy Policy - বর্ণমালা ও সংখ্যা পরিচয়</title>
-
+    <title>Privacy Policy - বর্ণমালা ও সংখ্যা পরিচয়</title>
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text-color: #374151;
+            --heading-color: #111827;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, "Noto Sans Bengali", sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
         }
 
         h1 {
-            margin-top: 0;
-            color: #222;
-            font-size: 32px;
+            color: var(--heading-color);
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
         }
 
-        h2 {
-            margin-top: 30px;
-            color: #222;
-            font-size: 22px;
-        }
-
-        p {
-            font-size: 16px;
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.95rem;
+            font-style: italic;
         }
 
         .app-name {
-            font-weight: bold;
+            color: var(--primary-color);
+            font-weight: 600;
         }
 
-        .updated {
-            color: #666;
-            font-size: 14px;
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
         }
 
         a {
-            color: #0066cc;
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
         }
 
         a:hover {
+            color: var(--primary-hover);
             text-decoration: underline;
         }
 
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #777;
-            font-size: 14px;
+        .contact-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
         }
 
-        @media (max-width: 600px) {
+        .contact-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+            
             .container {
-                margin: 15px;
-                padding: 25px 20px;
+                padding: 1.5rem;
             }
 
             h1 {
-                font-size: 26px;
+                font-size: 1.75rem;
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 1.15rem;
             }
         }
     </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: September 15, 2026</p>
+        </header>
 
-    <h1>Privacy Policy</h1>
+        <main>
+            <p>This Privacy Policy explains how <span class="app-name">“বর্ণমালা ও সংখ্যা পরিচয়”</span> (“the App”) handles information when you use our application.</p>
+            
+            <p>The App is an educational application designed primarily for children to learn Bengali letters, numbers, basic concepts, and other educational content in a simple and enjoyable way.</p>
+            
+            <p>We respect your privacy and are committed to protecting children and users.</p>
 
-    <p class="updated">
-        Last updated: July 31, 2026
-    </p>
+            <h2>1. Information We Collect</h2>
+            <p>The App does not require users to create an account or provide personal information to use its main educational features.</p>
+            <p>We do not directly collect or store personal information such as:</p>
+            <ul>
+                <li>Full name</li>
+                <li>Home address</li>
+                <li>Phone number</li>
+                <li>Email address</li>
+                <li>Passwords</li>
+                <li>Contacts</li>
+                <li>Photos or videos</li>
+                <li>Precise GPS location</li>
+                <li>Financial or payment information</li>
+            </ul>
+            <p>However, the App may use third-party services, such as Google AdMob, which may automatically process certain technical and advertising-related information when advertisements are displayed or requested.</p>
+            <p>Depending on the services and settings used, this may include:</p>
+            <ul>
+                <li>Device and app information</li>
+                <li>IP address</li>
+                <li>Advertising or app-related identifiers, where permitted</li>
+                <li>Advertising requests and interactions</li>
+                <li>Approximate location derived from IP address</li>
+                <li>Diagnostic, performance, and security information</li>
+            </ul>
+            <p>We do not intentionally request personal information directly from children.</p>
 
-    <p>
-        Welcome to
-        <span class="app-name">বর্ণমালা ও সংখ্যা পরিচয়</span>.
-        This Privacy Policy explains how we handle information in connection
-        with our mobile application.
-    </p>
+            <h2>2. Children's Privacy</h2>
+            <p>The App is primarily intended for children and families.</p>
+            <p>We take children's privacy seriously and design the App to comply with applicable children's privacy and advertising requirements, including the Google Play Families Policy and applicable AdMob policies.</p>
+            <p>We do not knowingly ask children to provide personal information such as their name, address, phone number, email address, or precise location.</p>
+            <p>Where advertising is used, advertising services are configured for child-directed use in accordance with applicable policies.</p>
+            <p>We do not knowingly use personalized or interest-based advertising, remarketing, or similar advertising practices directed at children.</p>
 
-    <h2>1. Information We Collect</h2>
+            <h2>3. Advertising and Google AdMob</h2>
+            <p>The App may use Google AdMob to display advertisements in current or future versions of the application.</p>
+            <p>Google AdMob is an advertising service provided by Google LLC.</p>
+            <p>When advertisements are requested or displayed, Google and its advertising partners may process certain technical information as necessary to provide, measure, secure, and improve advertising services, subject to applicable policies and settings.</p>
+            <p>For child-directed advertising, we configure the advertising service in accordance with applicable Google Play Families and AdMob requirements, including restrictions relating to personalized advertising and advertising identifiers.</p>
+            <p>For more information about how Google handles information, please see:</p>
+            <ul>
+                <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                <li>Google AdMob: <a href="https://support.google.com/admob/" target="_blank" rel="noopener noreferrer">https://support.google.com/admob/</a></li>
+            </ul>
 
-    <p>
-        বর্ণমালা ও সংখ্যা পরিচয় does not currently require users to
-        create an account or provide personal information to use the app.
-    </p>
+            <h2>4. Advertising for Children</h2>
+            <p>Because the App is primarily designed for children, we take additional care regarding advertisements.</p>
+            <p>Where AdMob is used:</p>
+            <ul>
+                <li>Ads are configured for child-directed use.</li>
+                <li>Personalized or interest-based advertising is not intentionally served to children.</li>
+                <li>Remarketing is not intentionally used for children.</li>
+                <li>Advertisements should be appropriate for the intended child audience.</li>
+                <li>We follow applicable Google Play Families and AdMob advertising requirements.</li>
+                <li>We take reasonable steps to prevent inappropriate or misleading advertisements from being displayed.</li>
+            </ul>
+            <p>Advertising availability and behavior may vary depending on Google's policies, technical systems, and applicable regional requirements.</p>
 
-    <p>
-        We do not knowingly collect, store, or sell personal information
-        from users through the app.
-    </p>
+            <h2>5. Third-Party Services</h2>
+            <p>The App may use third-party services to provide advertising, security, diagnostics, performance measurement, or other necessary functionality.</p>
+            <p>These services may process limited technical information according to their own privacy policies.</p>
+            <p>Currently, the primary advertising service that may be used by the App is:</p>
+            <ul>
+                <li><strong>Google AdMob</strong><br>
+                Purpose may include:
+                <ul>
+                    <li>Displaying advertisements</li>
+                    <li>Measuring advertising performance</li>
+                    <li>Preventing fraud and abuse</li>
+                    <li>Maintaining security</li>
+                    <li>Supporting advertising functionality</li>
+                </ul>
+                </li>
+            </ul>
+            <p>Google's privacy policy is available here: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
 
-    <h2>2. Children's Privacy</h2>
+            <h2>6. Cookies and Similar Technologies</h2>
+            <p>The App itself does not intentionally use cookies to directly identify users.</p>
+            <p>Third-party services such as Google AdMob may use cookies, mobile identifiers, or similar technologies where permitted and necessary for advertising, measurement, security, or service functionality.</p>
+            <p>Such technologies are controlled according to the applicable third-party service policies and platform requirements.</p>
 
-    <p>
-        বর্ণমালা ও সংখ্যা পরিচয় is an educational application designed
-        to help children learn and become familiar with the Bengali alphabet.
-    </p>
+            <h2>7. Data Sharing</h2>
+            <p>We do not sell, rent, or intentionally share users' personal information for commercial purposes.</p>
+            <p>Information processed by third-party services may be handled according to their respective privacy policies and applicable laws.</p>
+            <p>We may also disclose information when required by law, legal process, fraud prevention requirements, security requirements, or protection of our rights and users.</p>
 
-    <p>
-        We are committed to protecting children's privacy. We do not knowingly
-        collect personal information from children through the app.
-    </p>
+            <h2>8. Data Security</h2>
+            <p>We take reasonable measures to protect information associated with the App.</p>
+            <p>However, no electronic transmission or storage system can be guaranteed to be completely secure.</p>
 
-    <p>
-        Parents or guardians who believe that a child may have provided
-        personal information to us are encouraged to contact us using the
-        email address provided below.
-    </p>
+            <h2>9. Data Retention</h2>
+            <p>We do not maintain a user account database or intentionally store personal information collected directly from children.</p>
+            <p>Information processed by third-party services, such as Google AdMob, may be retained according to the applicable third-party service policies and legal requirements.</p>
 
-    <h2>3. Third-Party Services</h2>
+            <h2>10. Parents and Guardians</h2>
+            <p>Parents and guardians are encouraged to supervise children's use of mobile applications and online services.</p>
+            <p>If you believe that a child has provided personal information to us directly, please contact us so that we can review the matter and take appropriate action.</p>
 
-    <p>
-        At the time of publication of this Privacy Policy, the app does not
-        use advertising services such as Google AdMob.
-    </p>
+            <h2>11. Privacy Choices</h2>
+            <p>Depending on the user's location, device, operating system, and applicable laws, privacy choices or controls may be available through the device, Google services, or other applicable mechanisms.</p>
+            <p>For information about Google's privacy practices and available controls, please visit: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
 
-    <p>
-        In the future, we may introduce third-party services, including
-        advertising services such as Google AdMob. If we do so, this Privacy
-        Policy will be updated to reflect the use of such services and the
-        information they may collect or process.
-    </p>
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes to the App, third-party services, applicable laws, or our privacy practices.</p>
+            <p>Any updated version will be published on this page with a new “Last updated” date.</p>
 
-    <h2>4. Advertising</h2>
+            <h2>13. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the App, please contact us:</p>
+            
+            <div class="contact-box">
+                <p><strong>App Name:</strong> বর্ণমালা ও সংখ্যা পরিচয়</p>
+                <p><strong>Email:</strong> <a href="mailto:mshaharina1997@gmail.com">mshaharina1997@gmail.com</a></p>
+            </div>
+        </main>
 
-    <p>
-        The app currently does not display third-party advertisements.
-    </p>
-
-    <p>
-        If advertising is introduced in a future version of the app, we will
-        update this Privacy Policy accordingly. Any third-party advertising
-        provider may collect or process certain information in accordance
-        with its own privacy policy and applicable laws.
-    </p>
-
-    <h2>5. Data Security</h2>
-
-    <p>
-        We take reasonable steps to protect information associated with the
-        app. However, no method of electronic storage or transmission over
-        the Internet is completely secure, and we cannot guarantee absolute
-        security.
-    </p>
-
-    <h2>6. Changes to This Privacy Policy</h2>
-
-    <p>
-        We may update this Privacy Policy from time to time to reflect changes
-        in the app, our practices, or applicable legal requirements.
-    </p>
-
-    <p>
-        Any updates will be published on this page. We encourage users and
-        parents or guardians to review this Privacy Policy periodically.
-    </p>
-
-    <h2>7. Contact Us</h2>
-
-    <p>
-        If you have any questions, concerns, or requests regarding this
-        Privacy Policy or the app, please contact us at:
-    </p>
-
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:mshaharina1997@gmail.com">
-            mshaharina1997@gmail.com
-        </a>
-    </p>
-
-    <footer>
-        &copy; 2026 বর্ণমালা ও সংখ্যা পরিচয়. All rights reserved.
-    </footer>
-
-</div>
+        <footer>
+            <p>&copy; 2026 বর্ণমালা ও সংখ্যা পরিচয়. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
